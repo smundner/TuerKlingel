@@ -22,7 +22,7 @@ def takePic():
     bs = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
     bs.setsockopt(socket.SOL_SOCKET,socket.SO_REUSEADDR,1)
     bs.setsockopt(socket.SOL_SOCKET,socket.SO_BROADCAST,1)
-    bs.sendto('Klingel_oben'.encode(),('<broadcast>',60000))
+    bs.sendto('Klingel1'.encode(),('<broadcast>',6000))
 
 def main():
     init()
